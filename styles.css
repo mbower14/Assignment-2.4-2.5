@@ -1,0 +1,231 @@
+/* 
+Name: Mary Bowers
+Project: Wunderlust Majorca
+*/
+
+/* ~~~~~~~~~~ CSS Reset ~~~~~~~~~~ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    background-color: #EAEAEA;
+}
+
+/* ~~~~~~~~~~ Typography ~~~~~~~~~~ */
+h1, h2, h3 {
+    font-family: 'Molle', serif;
+    font-style: italic;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #F6D64A;
+    text-align: center;
+    margin: 1rem 0;
+}
+h2 {
+    font-size: 2rem;
+    color: #55BCD5;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+    color: #9B26B0;
+    margin-bottom: 0.5rem;
+}
+p, q, small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #222222;
+    line-height: 1.6;
+}
+q {
+    font-style: italic;
+    quotes: "“" "”";
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+
+/* ~~~~~~~~~~ Colors ~~~~~~~~~~ */
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* ~~~~~~~~~~ Header ~~~~~~~~~~ */
+header {
+    background-color: var(--teal);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+header img {
+    max-width: 150px;
+    margin: 0 auto 1rem;
+}
+header h1 {
+    margin-top: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav ul li a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+/* ~~~~~~~~~~ Main Section ~~~~~~~~~~ */
+main {
+    padding: 2rem 1rem;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+main h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+section {
+    margin-bottom: 2rem;
+}
+article {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+article h3 {
+    margin-bottom: 0.5rem;
+}
+article img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* ~~~~~~~~~~ About Section ~~~~~~~~~~ */
+#details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+#details div {
+    background-color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#details h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ~~~~~~~~~~ Contact Form ~~~~~~~~~~ */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+form input, form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+form button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: var(--purple);
+}
+
+/* ~~~~~~~~~~ Footer ~~~~~~~~~~ */
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
+}
+footer a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 0.5rem;
+}
+footer a:hover {
+    color: var(--teal);
+}
+
+/* ~~~~~~~~~~ Responsive Design ~~~~~~~~~~ */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #details {
+        grid-template-columns: 1fr;
+    }
+}
